@@ -27,6 +27,8 @@ __attribute__((objc_root_class))
              withObject:(id)anArgument
              afterDelay:(NSTimeInterval)delay;
 
+- (IMP) methodForSelector:(SEL) aSelector;
+
 @end
 
 #endif /* FNZombie_h */

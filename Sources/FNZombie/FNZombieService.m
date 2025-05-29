@@ -321,4 +321,12 @@ static void zombie_dealloc(id object, SEL selector) {
   ];
 };
 
+- (IMP) methodForSelector:(SEL) aSelector {
+    [[FNZombieService sharedInstance]
+     crashWithObject:self
+     withSelector:aSelector
+     fromSelector:_cmd
+    ];
+}
+
 @end
