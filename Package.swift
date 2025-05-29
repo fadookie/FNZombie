@@ -22,6 +22,7 @@ let package = Package(
         "swift_shims",
       ],
       path: "Sources/FNZombie",
+      publicHeadersPath: "include",
       cSettings: [
         .headerSearchPath("include"),
         .unsafeFlags(["-fno-objc-arc"])
